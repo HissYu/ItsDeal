@@ -7,7 +7,7 @@
 <script>
     import axios from 'axios';
     
-    axios.defaults.baseURL='http://localhost/deal-high/bg/public/index.php';
+    axios.defaults.baseURL='http://localhost/deal-fkgit/bg/public/index.php';
 
     export default{
         name:'app',
@@ -28,5 +28,7 @@
 <style>
     #app{
         text-align: center;
+        background-size: cover;
     }
+    body{min-height: 100%;margin: 0;}
 </style>

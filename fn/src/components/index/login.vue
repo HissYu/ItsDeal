@@ -6,7 +6,7 @@
       </el-col>
     </el-row>
     <el-row>
-      <el-col :span="6" :offset="18">
+      <el-col :span="6" :offset="18" style="position:relative;">
         <el-card class="form-container">
           <el-input v-model="account" placeholder="用户名"></el-input>
           <el-input v-model="password" placeholder="密码"></el-input>
@@ -46,14 +46,35 @@ export default {
 </script>
 <style>
 .form-container{
-  opacity: 0.9;
+  background-color:rgba(255,255,255,0.68);
+  position: relative;
 }
-.form-container *{
-  margin: 5px 0;
+
+.form-container>*>*{
+  margin: 10px 0;
 }
 .btn-container{
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+/* #app::after{
+  content: "";
+
+	width: 100%;
+
+	height: 100%;
+
+	position: absolute;
+
+	left:0;
+
+	top:0;
+
+	background: inherit;
+
+	filter: blur(15px);
+
+	z-index: -1;
+} */
 </style>
