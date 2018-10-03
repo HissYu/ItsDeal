@@ -80,7 +80,6 @@ export default {
   content: "";
   position: absolute;
   left: 0;
-  /* height: 1px; */
   border-top: 1px solid black;
   width: 100%;
 }
