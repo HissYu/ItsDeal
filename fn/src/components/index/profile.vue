@@ -107,13 +107,11 @@ export default {
   position: absolute;
   top: -40px;
   right: 10%;
-  /* width: 30% */
 }
 .first-col .suffix-action{
   position: absolute;
   top: 0;
   right: 10%;
-  /* width: 30%; */
 }
 </style>
 
