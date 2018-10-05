@@ -88,16 +88,18 @@ export default {
   display: block;
 }
 .first-col{ position: relative;}
-.first-col .iconbox{
+.iconbox{
   position: absolute;
-  left: 0;
-  top: -40px;
   width: 80px;
   height: 80px;
   border:solid 1px black;
   border-radius: 80px;
   overflow: hidden;
   background-color:white; 
+}
+.first-col .iconbox{
+  left: 0;
+  top: -40px;
 }
 .first-col .iconbox img{
   width: 100%;
