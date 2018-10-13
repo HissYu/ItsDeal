@@ -10,3 +10,12 @@
 // +----------------------------------------------------------------------
 
 // 应用公共文件
+function create_salt($length = 30)  
+{
+    $randstr = ""; 
+    for ($i = 0; $i < $length; $i++) 
+    { 
+        $randstr .= chr(mt_rand(33, 126)); 
+    } 
+    return $randstr; 
+} 
