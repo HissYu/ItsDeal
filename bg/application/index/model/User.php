@@ -94,4 +94,25 @@ class User extends Model
         $data=$this->table('dl_user')->where('user_nickname',$userNickName)->count();
         return $data;
     }
+    /**
+     * when user apply to verify his account
+     * @author ORIGIN
+     * @param array user's input in form
+     * @return int 0 for fault and 1 for success
+     */
+    public function toVerify($infoList)
+    {
+        $data=[
+            'verify_user_id'=>$infoList['user_id'],
+            'verify_realname'=>$infoList['user_realname'],
+            'verify_stu_id'=>$infoList['user_stu_id']
+        ];
+        $r=$this->table('dl_user_vetify')->insert($data);
+        if($r)
+        {
+            $r=$this->table('dl_user')->where('user_id',$infoList['user_id'])->update(['user_is_verified'=>'1']);
+            return $r;
+        }
+        return $r;
+    }
 }
