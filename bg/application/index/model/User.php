@@ -115,4 +115,15 @@ class User extends Model
         }
         return $r;
     }
+    /**
+     * when a user apply to be a seller
+     * @author ORIGIN
+     * @param int user's ID
+     * @return int 0 for fault and 1 for success
+     */
+    public function beSeller($userId)
+    {
+        $r=$this->table('dl_user')->where('user_id',$userId)->update(['user_is_seller'=>'1']);
+        return $r;
+    }
 }
