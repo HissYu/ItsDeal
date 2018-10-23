@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack",
-    "server": "webpack-dev-server --open"
+    "server": "webpack-dev-server --open",
+    "firstrun": "npm install babel-core babel-loader babel-plugin-transform-runtime babel-preset-env babel-runtime copy-webpack-plugin css-loader file-loader html-loader html-webpack-plugin less less-loader less-loader node-sass sass-loader style-loader url-loader vue vue-cli vue-html-loader vue-loader vue-template-compiler webpack webpack-cli webpack-dev-server --save-dev axios element-ui vue-router --save"
   },
   "author": "",
   "license": "ISC",
