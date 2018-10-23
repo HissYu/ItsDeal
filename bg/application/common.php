@@ -10,6 +10,13 @@
 // +----------------------------------------------------------------------
 
 // 应用公共文件
+
+/**
+ * this generate salt for sha256 encoding user's password
+ * @author ORIGIN
+ * @param int this is optional, controlling length of this salt
+ * @return string random salt for encoding
+ */
 function create_salt($length = 30)  
 {
     $randstr = ""; 
@@ -19,3 +26,4 @@ function create_salt($length = 30)
     } 
     return $randstr; 
 } 
+
