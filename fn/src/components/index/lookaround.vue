@@ -38,7 +38,7 @@
                   </el-input>
                 </el-col>
                 <el-col :span="10" :offset="3">
-                  <el-button type="text">评级<i class="el-icon-sort"></i></el-button>
+                  <el-button type="text">时间<i class="el-icon-sort"></i></el-button>
                   <el-button type="text">热度<i class="el-icon-sort"></i></el-button>
                   <el-button type="text">价格<i class="el-icon-sort"></i></el-button>
                   <el-button icon="el-icon-circle-close-outline" type="text" circle @click="clearArrangeCondition()"></el-button>
