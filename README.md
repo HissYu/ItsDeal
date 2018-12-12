@@ -16,3 +16,4 @@
 > - application/.htaccess
 > - application/database.php
 > - vendor 文件夹及其所有内容
+> - extend 文件夹及其所有内容
