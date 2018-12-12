@@ -15,3 +15,4 @@
 > - composer.lock
 > - application/.htaccess
 > - application/database.php
+> - vendor 文件夹及其所有内容
