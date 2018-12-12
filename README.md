@@ -3,7 +3,7 @@
 
 本着服务大众（~~装逼~~）的目的，有志创建了此项目
 
-基于Webpack4 & ThinkPHP 
+基于Webpack4 & ThinkPHP5 
 
 根目录下为本项目的数据库导出文件
 
