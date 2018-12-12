@@ -54,6 +54,8 @@ CREATE TABLE `dl_item` (
   `item_image` tinytext,
   `item_tag` text,
   `item_price` int(11) DEFAULT NULL,
+  `item_puttime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `item_views` int(11) DEFAULT '0',
   PRIMARY KEY (`item_id`),
   UNIQUE KEY `item_id_UNIQUE` (`item_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -404,4 +406,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-10-23 22:40:52
+-- Dump completed on 2018-12-12 11:51:44
